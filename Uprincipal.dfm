@@ -3,8 +3,8 @@ object Form1: TForm1
   Top = 124
   BorderStyle = bsDialog
   Caption = 'Form1'
-  ClientHeight = 451
-  ClientWidth = 1037
+  ClientHeight = 351
+  ClientWidth = 1025
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -54,9 +54,30 @@ object Form1: TForm1
     TabOrder = 2
     OnClick = btDecodeClick
   end
+  object Button1: TButton
+    Left = 368
+    Top = 319
+    Width = 75
+    Height = 25
+    Caption = 'PDF encode'
+    TabOrder = 3
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 463
+    Top = 319
+    Width = 75
+    Height = 25
+    Caption = 'PDF decode'
+    TabOrder = 4
+    OnClick = Button2Click
+  end
   object opImage: TOpenPictureDialog
-    Filter = '*.jpg'
-    Left = 56
-    Top = 368
+    Left = 368
+    Top = 216
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 632
+    Top = 208
   end
 end
